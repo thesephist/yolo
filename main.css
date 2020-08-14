@@ -8,8 +8,8 @@ body {
 
 main {
     width: 96%;
-    max-width: 700px;
-    margin: 1em auto;
+    max-width: 840px;
+    margin: 1em auto 2em auto;
     line-height: 1.5em;
 }
 
@@ -17,6 +17,7 @@ main {
     display: inline-block;
     margin-right: 0.4em;
     font-size: .8em;
+    padding: .2em .8em;
 }
 
 strong {
@@ -29,10 +30,6 @@ code {
     border-radius: 4px;
 }
 
-hr {
-    margin: 1.5em 0;
-}
-
 a {
     color: var(--paper-accent);
     transition: transform .2s, opacity .2s;
@@ -42,13 +39,17 @@ a:hover {
     opacity: .7;
 }
 
+github-author {
+    transform: scale(.9);
+}
+
 github-author a:hover {
     transform: scale(.95);
 }
 
 p.notice {
-    background: rgba(0, 0, 0, .1);
-    padding: 1em;
+    background: rgba(0, 0, 0, .08);
+    padding: 0.6em .8em;
     box-sizing: border-box;
 }
 

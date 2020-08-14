@@ -27,13 +27,13 @@ class GitHubAuthor extends HTMLElement {
             display: inline-flex;
             flex-direction: column;
             align-items: center;
-            font-size: .8em;
-            width: 8em;
+            font-size: .75em;
+            width: 7em;
         " target="_blank" noreferer noopener>
             <img src="${this.avatarURL}"
                 style="
-                    height: 50px;
-                    width: 50px;
+                    height: 46px;
+                    width: 46px;
                     border-radius: 25px;
                     background: rgba(0, 0, 0, .1);
                 "
@@ -52,9 +52,9 @@ window.customElements.define('github-author', GitHubAuthor);
 // here's some s**tty code to pull last-updated
 
 fetch("https://api.github.com/repos/thesephist/yolo/commits")
-  .then((d) => d.json())
-  .then((data) => {
-      document.getElementById("commit").innerHTML =
-          `<a href="${data[0].author.html_url}" target="_blank">@${data[0].author.login}</a> 
+    .then((d) => d.json())
+    .then((data) => {
+        document.getElementById("commit").innerHTML =
+            `<a href="${data[0].author.html_url}" target="_blank">@${data[0].author.login}</a> 
             &ndash; ${data[0].commit.message} (<a href="https://github.com/thesephist/yolo/commit/${data[0].sha}" target="_blank">${data[0].sha.substring(0, 7)}</a>)`
-  })
+    })
