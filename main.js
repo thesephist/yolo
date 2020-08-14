@@ -1,3 +1,6 @@
+// Feel free to add phrases to the useless button up here!
+const phrases = ["This is the Useless Button.", "Why click on me?", "Ow!", "UwU", "Join Hack Club!", "ORB", "...", "Are you happy now?", "Thank you for agreeing to our ToS", "Thank you for your donation!", "Your IP has been logged and reported to the FBI"];
+
 async function fetchAvatarURL(username) {
     const resp = await fetch(`https://api.github.com/users/${username}`);
     const jsonResp = await resp.json();
@@ -58,3 +61,11 @@ fetch("https://api.github.com/repos/thesephist/yolo/commits")
             `<a href="${data[0].author.html_url}" target="_blank">@${data[0].author.login}</a> 
             &ndash; ${data[0].commit.message} (<a href="https://github.com/thesephist/yolo/commit/${data[0].sha}" target="_blank">${data[0].sha.substring(0, 7)}</a>)`
     })
+
+let currentButtonText = 0;
+const uselessFunction = uselessButton => {
+    let randPhrase = Math.floor(Math.random() * (phrases.length-1));
+    randPhrase += randPhrase >= currentButtonText ? 1 : 0;
+    currentButtonText = randPhrase;
+    uselessButton.value = phrases[randPhrase];
+}
