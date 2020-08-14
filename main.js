@@ -97,3 +97,17 @@ fetch("https://icanhazdadjoke.com/", {
 const animals = ["🦑", "🦊", "🐤", "🐲", "🦋", "🐟", "🦄"]
 const randomAnimal = animals[Math.floor(Math.random() * animals.length)]
 document.body.style.cursor = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>${randomAnimal}</text></svg>") 16 0,auto`
+
+const barrelRoll = () => {
+  document.body.style.cssText += `
+        -moz-animation-name: roll;
+        -moz-animation-duration: 4s;
+        -moz-animation-iteration-count: 1;
+        -webkit-animation-name: roll;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-iteration-count: 1;
+      `;
+
+  document.getElementById("barrel_button").style.display = "none";
+  document.getElementById("out_of_tokens").style.display = "inline";
+};
