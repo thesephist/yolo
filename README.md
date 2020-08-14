@@ -14,11 +14,13 @@ On the yolo page, **anything goes**. This is a public GitHub repository, and I'l
 ## Rules!
 
 1. No spamming, advertising, or simply deleting other people's work
-1. No potential security issues -- e.g. no random third-party scripts
+1. No potential security issues, like random third-party scripts
 1. Please try not to hide/move this rules section or the contributors section below :) but you're free to improve it!
-
-You can see much more on the actual site ^^
 
 Here's what it's starting out as, on the morning of **August 14, 2020**:
 
 ![Screenshot as of Aug 14](screenshot.png)
+
+... and later that day
+
+![Screenshot as of later Aug 14](screenshot-2.png)
