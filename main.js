@@ -91,3 +91,9 @@ fetch("https://icanhazdadjoke.com/", {
             document.getElementById("dad_joke_container").innerHTML = "can't fetch dad joke :(("
         }
     })
+
+// Sets cursor to an emoji. Only visible on desktop (or wherever else a regular cursor is visible).
+// https://dev.to/kyleakelly/use-emojis-as-cursors-3di0
+const animals = ["🦑", "🦊", "🐤", "🐲", "🦋", "🐟", "🦄"]
+const randomAnimal = animals[Math.floor(Math.random() * animals.length)]
+document.body.style.cursor = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>${randomAnimal}</text></svg>") 16 0,auto`
