@@ -1,6 +1,15 @@
 // Feel free to add phrases to the useless button up here!
 const phrases = ["This is the Useless Button.", "Why click on me?", "Ow!", "UwU", "Join Hack Club!", "ORB", "...", "Are you happy now?", "Thank you for agreeing to our ToS", "Thank you for your donation!", "Your IP has been logged and reported to the FBI"];
 
+// https://github.com/bryc/code/blob/master/jshash/PRNGs.md#lcg-lehmer-rng
+const LCG = (a) => {
+    return function() {
+      a = Math.imul(48271, a) | 0 % 2147483647;
+      return (a & 2147483647) / 2147483648;
+    }
+}
+Math.random = LCG(Date.now());
+
 async function fetchAvatarURL(username) {
     const resp = await fetch(`https://api.github.com/users/${username}`);
     const jsonResp = await resp.json();
