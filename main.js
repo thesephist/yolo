@@ -48,3 +48,7 @@ class GitHubAuthor extends HTMLElement {
     }
 }
 window.customElements.define('github-author', GitHubAuthor);
+
+for(let i = 0; i<10; i++){
+  alert(`${9-i} more to go!`)
+}
