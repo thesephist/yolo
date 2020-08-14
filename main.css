@@ -39,12 +39,8 @@ a:hover {
     opacity: .7;
 }
 
-github-author {
-    transform: scale(.9);
-}
-
 github-author a:hover {
-    transform: scale(.95);
+    transform: scale(1.1);
 }
 
 p.notice {
