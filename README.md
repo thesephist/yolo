@@ -14,7 +14,7 @@ On the yolo page, **anything goes**. This is a public GitHub repository, and I'l
 ## Rules!
 
 1. No modifying `README.md` or this rules section, down to the `<hr/>`
-1. No spamming or advertising
+1. No spamming, advertising, or simply deleting other people's work
 1. No potential security issues -- e.g. no random third-party scripts
 1. Please try not to hide/move this rules notice or the contributors section below :) but you're free to improve it!
 
