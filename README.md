@@ -19,8 +19,8 @@ On the yolo page, **anything goes**. This is a public GitHub repository, and I'l
 
 Here's what it's starting out as, on the morning of **August 14, 2020**:
 
-![Screenshot as of Aug 14](screenshot.png)
+![Screenshot as of Aug 14](img/screenshot.png)
 
 ... and later that day
 
-![Screenshot as of later Aug 14](screenshot-2.png)
+![Screenshot as of later Aug 14](img/screenshot-2.png)
