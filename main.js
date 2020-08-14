@@ -51,11 +51,10 @@ window.customElements.define('github-author', GitHubAuthor);
 
 // here's some s**tty code to pull last-updated
 
-fetch("https://api.github.com/repos/thesephist/yolo/commits") // Call the fetch function passing the url of the API as a parameter
+fetch("https://api.github.com/repos/thesephist/yolo/commits")
   .then((d) => d.json())
   .then((data) => {
       document.getElementById("commit").innerHTML =
           `<a href="${data[0].author.html_url}" target="_blank">@${data[0].author.login}</a> 
-            &ndash; ${data[0].commit.message} (<a href="${data[0].commit.url}" target="_blank">${data[0].sha.substring(0, 7)}</a>)`;
-    statLoaded = true;
-  });
+            &ndash; ${data[0].commit.message} (<a href="https://github.com/thesephist/yolo/commit/${data[0].sha}" target="_blank">${data[0].sha.substring(0, 7)}</a>)`
+  })
