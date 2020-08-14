@@ -49,3 +49,6 @@ p.notice {
     box-sizing: border-box;
 }
 
+span#dad_joke_container {
+    margin: 2em;
+}

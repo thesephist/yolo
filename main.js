@@ -69,3 +69,16 @@ const uselessFunction = uselessButton => {
     currentButtonText = randPhrase;
     uselessButton.value = phrases[randPhrase];
 }
+
+// grab a random dad joke
+fetch("https://icanhazdadjoke.com/", {
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(d => d.json())
+    .then(d => {
+        if (d.status === 200) {
+            document.getElementById("dad_joke_container").innerHTML = d.joke
+        } else {
+            document.getElementById("dad_joke_container").innerHTML = "can't fetch dad joke :(("
+        }
+    })
