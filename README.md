@@ -1,2 +1,3 @@
-# yolo
-I'll merge any pull request you make
+# the yolo site
+
+I'll merge any pull request you make.

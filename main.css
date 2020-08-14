@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f1f1f1;
+    --paper-accent: #d95656;
+}
+
+main {
+    width: 96%;
+    max-width: 700px;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+
+.buttons a {
+    display: inline-block;
+    margin-right: 0.4em;
+    font-size: .8em;
+}
+
+strong {
+    color: var(--paper-accent);
+}
+
+code {
+    background: rgba(0, 0, 0, .1);
+    padding: .2em .4em .1em .4em;
+    border-radius: 4px;
+}
+
+hr {
+    margin: 1.5em 0;
+}
+
+a {
+    color: var(--paper-accent);
+    transition: transform .2s, opacity .2s;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+github-author a:hover {
+    transform: scale(.95);
+}
+
+p.notice {
+    background: rgba(0, 0, 0, .1);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
