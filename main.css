@@ -80,10 +80,38 @@ span#dad_joke_container {
   }
 }
 
+
 html.dark-mode {
   filter: invert(100%);
 }
 
 html.dark-mode img {
   filter: invert(100%);
+}
+
+#spidey_button {
+  background-color: red;
+  border: none;
+  border-bottom: solid 5px darkred;
+  color: white;
+  border-right: solid 5px darkred;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+}
+
+
+#spidey_button:hover {
+  background-color: red;
+  border: none;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+  outline: none;
 }
