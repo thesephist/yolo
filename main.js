@@ -152,3 +152,11 @@ function loop() {
 }
 
 loop();
+
+const showSpideyDancing = () => {
+    document.getElementById("spideyAudio").play()
+    document.getElementById("spidey").style.display = "inline";
+    document.getElementById("spidey_button").innerHTML = "You're welcome";
+    document.getElementById("spidey_button").style.backgroundColor = "gray";
+}
+
