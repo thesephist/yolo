@@ -79,3 +79,11 @@ span#dad_joke_container {
     transform: rotate(360deg);
   }
 }
+
+html.dark-mode {
+  filter: invert(100%);
+}
+
+html.dark-mode img {
+  filter: invert(100%);
+}
