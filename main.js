@@ -112,6 +112,9 @@ const barrelRoll = () => {
   document.getElementById("out_of_tokens").style.display = "inline";
 };
 
-const toggleDarkMode = () => {
-  document.documentElement.classList.toggle('dark-mode');
-};
+const showSpideyDancing = () => {
+    document.getElementById("spideyAudio").play()
+    document.getElementById("spidey").style.display = "inline";
+    document.getElementById("spidey_button").innerHTML = "You're welcome";
+    document.getElementById("spidey_button").style.backgroundColor = "gray";
+}
