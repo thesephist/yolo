@@ -111,3 +111,7 @@ const barrelRoll = () => {
   document.getElementById("barrel_button").style.display = "none";
   document.getElementById("out_of_tokens").style.display = "inline";
 };
+
+const toggleDarkMode = () => {
+  document.documentElement.classList.toggle('dark-mode');
+};
