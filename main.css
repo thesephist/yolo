@@ -86,7 +86,8 @@ html.dark-mode {
   filter: invert(100%);
 }
 
-html.dark-mode img {
+html.dark-mode img,
+html.dark-mode iframe {
   filter: invert(100%);
 }
 
