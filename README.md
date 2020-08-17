@@ -24,3 +24,7 @@ Here's what it's starting out as, on the morning of **August 14, 2020**:
 ... and later that day
 
 ![Screenshot as of later Aug 14](img/screenshot-2.png)
+
+... two days later, on Aug 16
+
+![Screenshot as of Aug 16](img/screenshot-3.png)
