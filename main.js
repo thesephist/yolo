@@ -160,3 +160,13 @@ const showSpideyDancing = () => {
     document.getElementById("spidey_button").style.backgroundColor = "gray";
 }
 
+// Rickrolled 
+let rick = document.getElementById('rickroll');
+let sike = ["AHAAAA!", "ALMOSTT", "BEAT THAT!", "SIKEEE", "TRY ME"]
+
+rick.addEventListener('mouseover', function(event){
+    let newtext = Math.floor(Math.random() * (sike.length-1))
+    event.target.style.left = Math.random()*70 + "%"
+    event.target.style.top = Math.random()*20 + "%"
+    event.target.textContent = sike[newtext]
+})

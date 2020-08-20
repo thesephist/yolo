@@ -117,3 +117,30 @@ html.dark-mode iframe {
   margin-left: 5px;
   outline: none;
 }
+
+#rickroll{
+  background-color: #9c549c;
+  border: none;
+  border-bottom: solid 5px purple;
+  color: white;
+  border-right: solid 5px purple;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+  position: relative;
+}
+
+#rickroll:hover {
+  background-color: #9c549c;
+  border: none;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+  outline: none;
+}
