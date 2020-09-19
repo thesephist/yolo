@@ -4,6 +4,8 @@ body {
     font-family: system-ui, sans-serif;
     background: #f1f1f1;
     --paper-accent: #d95656;
+    animation: rainbow 5s linear infinite;
+
 }
 
 main {
@@ -144,3 +146,16 @@ html.dark-mode iframe {
   margin-left: 5px;
   outline: none;
 }
+ 
+@keyframes rainbow {
+    0%, 100% {
+        background-color: red;
+    }
+    33% {
+      background-color: blue;
+    }
+    66% {
+      background-color: yellow;
+    }
+}
+  
