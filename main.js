@@ -170,3 +170,7 @@ rick.addEventListener('mouseover', function(event){
     event.target.style.top = Math.random()*20 + "%"
     event.target.textContent = sike[newtext]
 })
+document.getElementById("hotmilkAudio").play()
+
+
+
