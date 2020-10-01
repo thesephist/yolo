@@ -144,3 +144,20 @@ html.dark-mode iframe {
   margin-left: 5px;
   outline: none;
 }
+
+/* Pure CSS <blink> Polyfill as seen on https://blog.àn.de/pure-css-lessblinkgreater-polyfill-ckejqvz7j00f370s1ho4sgcrh */
+@-webkit-keyframes blink{
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+blink{
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 2s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 2s;
+}
