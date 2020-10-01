@@ -1,5 +1,5 @@
 // Feel free to add phrases to the useless button up here!
-const phrases = ["This is the Useless Button.", "Why click on me?", "Ow!", "UwU", "Join Hack Club!", "ORB", "...", "Are you happy now?", "Thank you for agreeing to our ToS", "Thank you for your donation!", "Your IP has been logged and reported to the FBI"];
+const phrases = ["This is the Useless Button.", "Why click on me?", "Ow!", "UwU", "Join Hack Club!", "ORB", "...", "Are you happy now?", "Thank you for agreeing to our ToS", "Thank you for your donation!", "Your IP has been logged and reported to the FBI", "You just bought a washing machine. Awesome!"];
 
 // https://github.com/bryc/code/blob/master/jshash/PRNGs.md#lcg-lehmer-rng
 const LCG = (a) => {
