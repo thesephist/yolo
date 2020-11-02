@@ -170,3 +170,15 @@ rick.addEventListener('mouseover', function(event){
     event.target.style.top = Math.random()*20 + "%"
     event.target.textContent = sike[newtext]
 })
+
+const toggleBG = () => {
+    let elem = document.getElementById("notice-peter").style; 
+    console.log(elem['background']);
+    if (elem['background'] != 'url("img/grid.gif")') {
+        
+        elem.setProperty('background', "url('img/grid.gif')");
+    } else {
+        elem.setProperty('background', "rgba(0, 0, 0, .08)");
+    }
+
+}
