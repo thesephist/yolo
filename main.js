@@ -173,12 +173,9 @@ rick.addEventListener('mouseover', function(event){
 
 const toggleBG = () => {
     let elem = document.getElementById("notice-peter").style; 
-    console.log(elem['background']);
     if (elem['background'] != 'url("img/grid.gif")') {
-        
         elem.setProperty('background', "url('img/grid.gif')");
     } else {
         elem.setProperty('background', "rgba(0, 0, 0, .08)");
     }
-
 }
