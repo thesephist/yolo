@@ -12,7 +12,14 @@ main {
     margin: 1em auto 2em auto;
     line-height: 1.5em;
 }
+button {
+  border-color: #d95656;
+  background-color: rgba(0, 0, 0, .08);;
+}
+#search_bar{
+  border-color: #d95656;
 
+}
 .buttons a {
     display: inline-block;
     margin-right: 0.4em;

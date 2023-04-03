@@ -150,7 +150,15 @@ function loop() {
     }
     setTimeout(loop, 50);
 }
+function search()
+{
+    if (window.find(document.getElementById("search-bar").value)){
+        document.getElementById("search-result").innerHTML = "You should have been scrolled to the first result";
+    } else{
 
+        document.getElementById("search-result").innerHTML = "Nothing was found";
+    }
+}
 loop();
 
 const showSpideyDancing = () => {
